@@ -34,10 +34,12 @@ function TodoList(props) {
 
   useEffect(() => {
     async function fetchNotiList() {
-       const lop = sessionStorage.getItem("lop").split(" ");
+      console.log(sessionStorage.getItem("lop"))
+        const lop = sessionStorage.getItem("lop").split(" ");
+      
       // const lopString = sessionStorage.getItem("lop");
-      // const lop = lopString ? lopString.split(", ") : [];
-      console.log(lop)
+      //const lop = lopString ? lopString.split(", ") : [];
+
       setLop(lop);
 
       const item =
@@ -54,6 +56,10 @@ function TodoList(props) {
         .catch((err) => {
           console.log(err);
         });
+
+
+     
+      
     }
     fetchNotiList();
   }, []);

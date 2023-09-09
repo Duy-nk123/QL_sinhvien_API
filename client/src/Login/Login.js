@@ -253,7 +253,7 @@ class Login extends Component {
                     type='password'
                     name='password'
                     placeholder='Mật khẩu'
-                    // value={this.state.password}
+                     value={this.state.password}
 
                     onChange={this.handle}></_Input>
                 </Input_container>

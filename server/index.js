@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 
 dotenv.config();
 
-const DB_URL = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@projectz.w4f99tj.mongodb.net/test`;
+const DB_URL = `mongodb+srv://nguyenkhuongduy22062002:IZRSe6Yh5NKQf3bb@cluster0.4omf6oy.mongodb.net/`
 
 const app = express();
 app.use(cors());

@@ -57,7 +57,6 @@ class Chart extends Component {
       lop: sessionStorage.getItem("lop").split(" "),
     });
     var item = sessionStorage.getItem("item");
-
     CallApi(`student/all/${item}`, "GET", null).then((res) => {
       if (res.data.ListStudents != null) {
         this.setState({
